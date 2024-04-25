@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+    background-color: #FCFC62;
+    font-family: "Nunito", sans-serif;
+}
+.container{
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:40%;
+ height: fit-content;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  background: #FEFFEA;
+  border: 5px groove black;
+  border-radius: 5px;
+  color: black
+}
+
+.counter h1{
+  color: #000;
+  font-size: 2rem;
+}
+
+#count{font-size: 9rem;}
+
+#buttons{display: inline-block;}
+.btn{
+    padding: 10px 4px;
+    color: #000;
+    font-weight: 800;
+    background-color: white;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+@media (max-width:720px){
+    .counter{
+        width: 75%;
+    }
+}
+@media (max-width:500px){
+    .counter{
+        width: 90%;
+    }
+    #count{
+        font-size: 7rem;
+    }
+}
